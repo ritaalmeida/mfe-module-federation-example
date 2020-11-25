@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import "./../styles/index.css";
+import "../styles/index.css";
 
 const Checkout = ({items}) => {
   return (
