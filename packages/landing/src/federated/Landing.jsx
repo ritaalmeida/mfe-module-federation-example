@@ -1,7 +1,7 @@
 import React from "react";
 import "./../styles/index.css";
 
-import { products } from 'team-landing/MockedProducts';
+import { products } from '../federated/mocks/products';
 const BuyButton = React.lazy(() => import("team-checkout/BuyButton"));
 
 const Landing = () => {

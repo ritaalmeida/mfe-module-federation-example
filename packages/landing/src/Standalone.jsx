@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { connect } from "react-redux";
-import { products } from 'team-landing/MockedProducts';
+import { products } from './federated/mocks/products';
 import "./styles/index.css";
 
 const BuyButton = React.lazy(() => import("team-checkout/BuyButton"));

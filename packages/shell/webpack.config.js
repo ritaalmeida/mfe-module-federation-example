@@ -44,7 +44,6 @@ module.exports = {
       name: "shell",
       filename: "remoteEntry.js",
       remotes: {
-        "team-shell": "shell@http://localhost:3000/remoteEntry.js",
         "team-landing": "landing@http://localhost:3001/remoteEntry.js",
         "team-checkout": "checkout@http://localhost:3002/remoteEntry.js",
       },

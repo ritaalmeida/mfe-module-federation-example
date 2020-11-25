@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import Router from "./Router";
 
-import "team-shell/BaseStyles";
-import store from "team-shell/Store";
+import "./styles/base.css";
+import store from "./store";
 import "./styles/index.css";
 
 const Shell = () => (
