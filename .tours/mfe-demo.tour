@@ -1,0 +1,62 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "mfe-demo",
+  "steps": [
+    {
+      "file": "packages/shell/src/App.jsx",
+      "line": 1,
+      "description": "This is the App Component!\nbelongs to: team-shell",
+      "selection": {
+        "start": {
+          "line": 13,
+          "character": 8
+        },
+        "end": {
+          "line": 13,
+          "character": 14
+        }
+      }
+    },
+    {
+      "file": "packages/shell/webpack.config.js",
+      "line": 1,
+      "description": "Webpack for team-shell application"
+    },
+    {
+      "file": "packages/shell/webpack.config.js",
+      "line": 46,
+      "description": "Let me show you how this file looks at runtime!"
+    },
+    {
+      "file": "packages/shell/src/Router.jsx",
+      "line": 1,
+      "description": "This is the Router Component!\nbelongs to: team-shell"
+    },
+    {
+      "file": "packages/landing/src/federated/Landing.jsx",
+      "line": 1,
+      "description": "Landing Page from team-landing!"
+    },
+    {
+      "file": "packages/checkout/webpack.config.js",
+      "line": 41,
+      "description": "Find the exposed BuyButton(team-checkout) that Landing page (team-landing) is consuming"
+    },
+    {
+      "file": "packages/checkout/src/federated/BuyButton.jsx",
+      "line": 1,
+      "description": "BuyButton component from team-checkout!",
+      "selection": {
+        "start": {
+          "line": 14,
+          "character": 16
+        },
+        "end": {
+          "line": 14,
+          "character": 23
+        }
+      }
+    }
+  ],
+  "ref": "master"
+}
