@@ -1,9 +1,9 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
+const { ModuleFederationPlugin } = require("webpack").container;
 
 const deps = require("./package.json").dependencies;
+
 module.exports = {
-  entry: "./src/index",
   output: {
     publicPath: "auto",
   },
@@ -52,17 +52,7 @@ module.exports = {
         "./BuyButton": "./src/federated/BuyButton",
         "./Cart": "./src/federated/Cart",
       },
-      shared: {
-        ...deps,
-        react: {
-          singleton: true,
-          requiredVersion: deps.react,
-        },
-        "react-dom": {
-          singleton: true,
-          requiredVersion: deps["react-dom"],
-        },
-      },
+      shared: [deps],
     }),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
